@@ -1,0 +1,14 @@
+python-dotenv
+google-cloud-aiplatform
+numpy
+streamlit
+pandas
+numpy
+matplotlib
+plotly
+joblib
+scikit-learn
+seaborn
+python-dotenv
+google-generativeai
+lightgbm

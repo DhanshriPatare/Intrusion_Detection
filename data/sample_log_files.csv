@@ -1,0 +1,25 @@
+timestamp,level,source,message,ip_address,user_id,action,status
+2025-05-01 10:15:22,INFO,auth_service,[AUTH] User login successful from IP 192.168.1.102,192.168.1.102,user001,login,success
+2025-05-01 10:22:15,INFO,auth_service,[AUTH] User login successful from IP 192.168.1.105,192.168.1.105,user002,login,success
+2025-05-01 10:35:41,INFO,auth_service,[AUTH] User login successful from IP 192.168.1.103,192.168.1.103,user003,login,success
+2025-05-01 10:48:33,INFO,auth_service,[AUTH] User login successful from IP 192.168.1.107,192.168.1.107,user004,login,success
+2025-05-01 11:05:18,INFO,file_service,[FILE] User accessed file 'annual_report.pdf' from IP 192.168.1.102,192.168.1.102,user001,file_access,success
+2025-05-01 11:13:29,INFO,file_service,[FILE] User downloaded file 'marketing_plan.xlsx' from IP 192.168.1.105,192.168.1.105,user002,file_download,success
+2025-05-01 11:27:51,INFO,database_service,[DB] User executed query 'SELECT * FROM customers' from IP 192.168.1.103,192.168.1.103,user003,db_query,success
+2025-05-01 11:42:10,INFO,database_service,[DB] User executed query 'SELECT * FROM employees' from IP 192.168.1.107,192.168.1.107,user004,db_query,success
+2025-05-01 11:56:42,WARNING,auth_service,[AUTH] Multiple failed login attempts for user 'admin' from IP 10.0.0.12,10.0.0.12,admin,login,failed
+2025-05-01 12:03:19,ERROR,auth_service,[AUTH] Failed login attempt with invalid credentials from IP 10.0.0.15,10.0.0.15,admin,login,failed
+2025-05-01 12:15:37,WARNING,file_service,[FILE] Unusual file access pattern: User accessed 28 files in 2 minutes from IP 172.16.0.22,172.16.0.22,user005,file_access,suspicious
+2025-05-01 12:28:55,WARNING,file_service,[FILE] Sensitive file 'financial_report.xlsx' downloaded from unusual location. IP: 172.16.0.31,172.16.0.31,user006,file_download,suspicious
+2025-05-01 12:42:08,ERROR,web_service,[WEB] SQL injection attempt detected in web form submission from IP 45.33.21.18,45.33.21.18,unknown,web_request,attack
+2025-05-01 12:55:26,ERROR,web_service,[WEB] Cross-site scripting attempt detected in web form submission from IP 45.33.21.25,45.33.21.25,unknown,web_request,attack
+2025-05-01 13:09:41,WARNING,auth_service,[AUTH] User 'admin' logged in from unusual location. IP: 31.45.123.67,31.45.123.67,admin,login,suspicious
+2025-05-01 13:25:03,ERROR,auth_service,[AUTH] Brute force attack detected: 50 login attempts in 2 minutes for user 'admin' from IP 31.45.123.72,31.45.123.72,admin,login,attack
+2025-05-01 13:38:19,WARNING,network_service,[NET] Port scan detected from IP 185.156.73.42,185.156.73.42,unknown,network_scan,suspicious
+2025-05-01 13:52:36,WARNING,network_service,[NET] Unusual outbound traffic detected from internal server 192.168.1.108 to IP 185.156.73.58,185.156.73.58,unknown,outbound_traffic,suspicious
+2025-05-01 14:05:49,ERROR,dns_service,[DNS] DNS tunneling attempt detected from IP 104.28.42.19,104.28.42.19,unknown,dns_query,attack
+2025-05-01 14:16:12,ERROR,dns_service,[DNS] DNS amplification attack detected targeting server from IP 104.28.42.22,104.28.42.22,unknown,dns_query,attack
+2025-05-01 14:28:31,WARNING,web_service,[WEB] Unusual HTTP method (OPTIONS) detected from IP 23.94.17.144,23.94.17.144,unknown,web_request,suspicious
+2025-05-01 14:40:58,ERROR,web_service,[WEB] Shellcode detected in HTTP POST data from IP 23.94.17.168,23.94.17.168,unknown,web_request,attack
+2025-05-01 14:55:23,ERROR,network_service,[NET] Worm propagation attempt detected from IP 88.53.129.86,88.53.129.86,unknown,network_traffic,attack
+2025-05-01 15:09:47,ERROR,network_service,[NET] Malware command and control traffic detected to IP 88.53.129.91,88.53.129.91,unknown,network_traffic,attack
